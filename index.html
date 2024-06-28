@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Selector</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            margin: 40px auto;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 20px;
+            max-width: 600px;
+            background-image: url('https://img.freepik.com/foto-gratis/piedras-baldosas_1194-5322.jpg?w=826&t=st=1719557017~exp=1719557617~hmac=a1b6fd00cadaecc5b3446714ad283a883c48235399a4b7c74544938b05a94b3d');
+            background-size: 200px;
+            background-repeat: repeat;
+            background-position: center;
+            opacity: 0.9;
+            box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        }
+        .btn {
+            background-color: #6c757d;
+            color: white;
+            border: none;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .btn:hover {
+            background-color: #495057;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4 text-center">Seleccione un Pokémon</h1>
+        <div class="d-flex justify-content-center mb-4">
+            <button class="btn btn-secondary mr-2" id="prev-pokemon"><i class="fas fa-arrow-left"></i></button>
+            <div id="pokemon-selector" class="text-center">
+                <!-- Aquí se mostrará el Pokémon seleccionado -->
+            </div>
+            <button class="btn btn-secondary ml-2" id="next-pokemon"><i class="fas fa-arrow-right"></i></button>
+        </div>
+        <div class="text-center">
+            <button class="btn btn-primary" id="show-details">Mostrar Detalles</button>
+        </div>
+        <div id="pokemon-details" class="mt-4" style="display: none;">
+            <!-- Aquí se mostrarán los detalles del Pokémon -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
